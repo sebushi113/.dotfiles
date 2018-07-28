@@ -4,16 +4,17 @@ In order for the screen brightness keys to work on proprietary nvidia-drivers in
 
 # usage
 
-In /usr/share/X11/xorg.conf.d directory
-create a file
-10-nvidia-brightness.conf
+go to  
+/usr/share/X11/xorg.conf.d    
+create a file  
+10-nvidia-brightness.conf  
 with:
 ```bash
 Section "Device"
     Identifier     "Device0"
     Driver         "nvidia"
     VendorName     "NVIDIA Corporation"
-    BoardName      "Quadro K1000M"
+    BoardName      "QGeForce GT 425M"
     Option         "RegistryDwords" "EnableBrightnessControl=1"
 EndSection
 ```
