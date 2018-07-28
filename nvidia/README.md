@@ -14,7 +14,7 @@ Section "Device"
     Identifier     "Device0"
     Driver         "nvidia"
     VendorName     "NVIDIA Corporation"
-    BoardName      "QGeForce GT 425M"
+    BoardName      "GeForce GT 425M"
     Option         "RegistryDwords" "EnableBrightnessControl=1"
 EndSection
 ```
