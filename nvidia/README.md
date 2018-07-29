@@ -4,10 +4,10 @@ In order for the screen brightness keys to work on proprietary nvidia-drivers in
 
 # usage
 
-go to  
-/usr/share/X11/xorg.conf.d    
-create a file  
-10-nvidia-brightness.conf  
+go to\
+/usr/share/X11/xorg.conf.d\
+create a file\
+10-nvidia-brightness.conf\
 with:
 ```bash
 Section "Device"
