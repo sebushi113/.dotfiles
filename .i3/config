@@ -51,10 +51,10 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 ################################################################################################
 
 # Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
-bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+# bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
+# bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # bindsym XF86MonBrightnessUp exec "light -A 5; notify-send 'brightness up'" # increase screen brightness with notification
 # bindsym XF86MonBrightnessDown exec "light -U 5; notify-send 'brightness down'" # decrease screen brightness with notification
@@ -327,7 +327,7 @@ set_from_resource $term_color15    color15
 bar {
 	i3bar_command i3bar
 	status_command i3status
-	position bottom
+	position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
@@ -423,5 +423,7 @@ mode "$mode_gaps_outer" {
 
 }
 
-# set $feh exec --no-startup-id feh --bg-scale ~/Downloads/thumb-1920-872313.png
-# exec --no-startup-id feh --bg-scale ~/Downloads/thumb-1920-872313.png
+# set $feh exec --no-startup-id feh --bg-scale ~/Downloads/cybergirl.png
+# exec --no-startup-id feh --bg-scale ~/Downloads/cybergirl.png
+# exec feh --bg-scale /home/sebus/Downloads/cybergirl.png
+# exec $ ~/.fehbg &
