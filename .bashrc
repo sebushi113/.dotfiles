@@ -155,5 +155,10 @@ alias eb='vim ~/.bashrc'
 alias e3='vim ~/.i3/config'
 alias es='vim ~/.config/i3status/config'
 alias ev='sudo vim /etc/vimrc'
-alias xs="sudo sysctl -p && cd xmr-stak/build/bin && ./xmr-stak"
+alias xs="sudo sysctl -p && cd ~/xmr-stak/build/bin && ./xmr-stak"
 alias xr='xmrig/build/xmrig'
+alias ll='ls -al'
+alias studio='~/Android/android-studio/bin/studio.sh'
+
+export PATH=~/bin:$PATH
+export PATH=~/flutter/bin:$PATH
